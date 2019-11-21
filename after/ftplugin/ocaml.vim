@@ -1,10 +1,12 @@
+scriptencoding utf-8
+
 " Useful OCaml concealments
 " TODO: Make it toggle
 function! s:OCamlConcealments()
 	syntax keyword type type conceal cchar=T
 	syntax keyword module module conceal cchar=M
 	syntax keyword include include conceal cchar=∋
-	"syntax keyword fun fun conceal cchar=ƒ
+	syntax keyword function function conceal cchar=ƒ
 	syntax keyword fun fun conceal cchar=λ
 	syntax match div "//" conceal cchar=÷
 	syntax match mul "*" conceal cchar=×
